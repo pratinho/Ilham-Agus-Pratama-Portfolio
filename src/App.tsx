@@ -25,6 +25,14 @@ import {
 } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
+const getAssetUrl = (path: string) => {
+  if (!path) return '';
+  if (path.startsWith('http')) return path;
+  // Menghapus leading slash jika ada untuk menghindari double slash dengan BASE_URL yang biasanya memiliki trailing slash
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  return `${import.meta.env.BASE_URL}${cleanPath}`;
+};
+
 const NAV_LINKS = [
   { name: 'About', href: '#about' },
   { name: 'Experience', href: '#experience' },
@@ -529,7 +537,7 @@ export default function App() {
                   
                   <div className="w-full h-full relative z-10 overflow-hidden">
                     <img 
-                      src="profile.png" 
+                      src={getAssetUrl("profile.png")} 
                       alt="Ilham Agus Pratama"
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover object-top relative z-20 group-hover:scale-110 transition-transform duration-1000 ease-out"
@@ -611,7 +619,7 @@ export default function App() {
                   <div>
                     <div className="flex items-center gap-4 mb-6">
                       <div className="w-12 h-12 bg-white/5 border border-white/10 p-1 flex items-center justify-center overflow-hidden grayscale hover:grayscale-0 transition-all duration-500 shrink-0">
-                        <img src="logo-pnp.png" alt="PNP Logo" className="w-full h-full object-contain" />
+                        <img src={getAssetUrl("logo-pnp.png")} alt="PNP Logo" className="w-full h-full object-contain" />
                       </div>
                       <div>
                         <h4 className="font-black text-brand-primary text-lg uppercase tracking-tight">Politeknik Negeri Padang</h4>
@@ -715,7 +723,7 @@ export default function App() {
                   <div className={`space-y-6 ${idx % 2 === 0 ? 'lg:text-right lg:order-1' : 'lg:text-left lg:order-2'}`}>
                     <div className={`flex flex-col ${idx % 2 === 0 ? 'lg:items-end' : 'lg:items-start'}`}>
                       <div className="w-24 h-24 mb-8 bg-white/5 border border-white/10 p-2 grayscale hover:grayscale-0 transition-all duration-500 overflow-hidden">
-                        <img src={exp.logo} alt={exp.company} className="w-full h-full object-contain" />
+                        <img src={getAssetUrl(exp.logo)} alt={exp.company} className="w-full h-full object-contain" />
                       </div>
                       <span className="text-brand-accent font-black mono text-xs uppercase tracking-widest mb-2">{exp.period}</span>
                       <h3 className="text-3xl font-display font-medium italic uppercase tracking-tighter text-brand-primary">{exp.role}</h3>
@@ -797,7 +805,7 @@ export default function App() {
                     <div className="h-full bg-[#0d0d0d] border border-white/5 hover:border-brand-accent/40 transition-all duration-500 overflow-hidden flex flex-col">
                       <div className="aspect-video w-full overflow-hidden relative cursor-pointer" onClick={() => setSelectedProject(project)}>
                         <img 
-                          src={project.image} 
+                          src={getAssetUrl(project.image)} 
                           alt={project.title}
                           className="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-105 transition-all duration-700"
                         />
@@ -914,6 +922,17 @@ export default function App() {
                                 <span className="absolute bottom-4 text-[10px] text-white font-black uppercase tracking-widest">Click to enlarge</span>
                               </div>
                             </div>
+                          ) : item.platform === 'image' ? (
+                            <div 
+                              className="w-full h-full cursor-zoom-in group/img relative"
+                              onClick={() => setZoomedImage(item.url)}
+                            >
+                              <img src={getAssetUrl(item.url)} alt={item.title} className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
+                              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                <Search className="text-white" size={32} />
+                                <span className="absolute bottom-4 text-[10px] text-white font-black uppercase tracking-widest">Click to enlarge</span>
+                              </div>
+                            </div>
                           ) : (
                             <div className="w-full h-full flex flex-col items-center justify-center p-10 text-center bg-[#0d0d0d] relative group/sub">
                               <Play className="text-brand-accent/20 group-hover/item:text-brand-accent mb-6 transition-all duration-500" size={48} strokeWidth={1} />
@@ -960,7 +979,7 @@ export default function App() {
                 className="relative z-10 max-w-full max-h-full flex items-center justify-center"
               >
                 <img 
-                  src={zoomedImage} 
+                  src={getAssetUrl(zoomedImage)} 
                   alt="Zoomed View" 
                   className="max-w-full max-h-[85vh] object-contain border border-white/10 shadow-2xl"
                 />

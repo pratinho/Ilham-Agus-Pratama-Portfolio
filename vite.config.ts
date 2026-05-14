@@ -9,8 +9,10 @@ const __dirname = path.dirname(__filename);
 
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
+  const isGithubActions = !!process.env.GITHUB_ACTIONS;
+  
   return {
-    base: mode === 'production' ? '/Ilham-Agus-Pratama-Portfolio/' : '/', // Sesuai dengan nama repositori GitHub Anda di production, tapi '/' di development (preview)
+    base: isGithubActions ? '/Ilham-Agus-Pratama-Portfolio/' : '/',
     plugins: [react(), tailwindcss()],
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
