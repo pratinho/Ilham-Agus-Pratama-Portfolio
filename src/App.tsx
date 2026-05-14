@@ -916,17 +916,6 @@ export default function App() {
                               className="w-full h-full cursor-zoom-in group/img relative"
                               onClick={() => setZoomedImage(item.url)}
                             >
-                              <img src={item.url} alt={item.title} className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
-                              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
-                                <Search className="text-white" size={32} />
-                                <span className="absolute bottom-4 text-[10px] text-white font-black uppercase tracking-widest">Click to enlarge</span>
-                              </div>
-                            </div>
-                          ) : item.platform === 'image' ? (
-                            <div 
-                              className="w-full h-full cursor-zoom-in group/img relative"
-                              onClick={() => setZoomedImage(item.url)}
-                            >
                               <img src={getAssetUrl(item.url)} alt={item.title} className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" />
                               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
                                 <Search className="text-white" size={32} />
