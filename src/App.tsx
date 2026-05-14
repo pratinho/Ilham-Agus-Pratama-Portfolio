@@ -52,7 +52,7 @@ const EXPERIENCES = [
     location: 'Jakarta, Indonesia (Onsite)',
     role: 'Videographer and Video Editor',
     period: 'Apr 2025 - Present',
-    logo: '/logo-sport77.png',
+    logo: 'logo-sport77.png',
     description: 'Jakarta-based sportainment company focused on digital media, content production, and events.',
     tasks: [
       'Edit sports content: highlights, interviews, promos, and social media videos.',
@@ -66,7 +66,7 @@ const EXPERIENCES = [
     location: 'Padang, Indonesia (Onsite)',
     role: 'Graphic Designer and Videographer Intern',
     period: 'Oct 2024 - Apr 2025',
-    logo: '/logo-spfc.png',
+    logo: 'logo-spfc.png',
     description: 'Historic Indonesian football club established in 1980, competes in Liga 1 Indonesia.',
     tasks: [
       'Produce match highlights, player interviews, and promotional content.',
@@ -78,7 +78,7 @@ const EXPERIENCES = [
     location: 'Barcelona, Spain (Remotely)',
     role: 'Freelance Designer & Editor',
     period: 'May 2022 - Present',
-    logo: '/logo-90plus.png',
+    logo: 'logo-90plus.png',
     description: 'Company in the field of football sports offering Video Highlights, Graphic Design, and Web Development.',
     tasks: [
       'Served as a versatile creative professional proficiently serving as a Video Editor, Graphic Designer, and Web Designer.'
@@ -89,7 +89,7 @@ const EXPERIENCES = [
     location: 'Bangkok, Thailand (Remotely)',
     role: 'Freelance Video Editor',
     period: 'Oct 2022 - Jul 2024',
-    logo: '/logo-asia.png',
+    logo: 'logo-asia.png',
     description: 'Company providing trials for foreign football players in Asia.',
     tasks: [
       'Specialized in meticulous assembly and refinement of raw video footage.',
@@ -101,7 +101,7 @@ const EXPERIENCES = [
     location: 'Tangerang, Indonesia (Mixed)',
     role: 'Media Specialist & Scout',
     period: 'Oct 2021 - Jul 2024',
-    logo: '/logo-interfute.png',
+    logo: 'logo-interfute.png',
     description: 'Professional Football Player Management company.',
     tasks: [
       'Identify promising football talent through scouting.',
@@ -114,7 +114,7 @@ const EXPERIENCES = [
     location: 'Central Jakarta, Indonesia',
     role: 'UI/UX Designer Intern',
     period: 'Aug 2023 - Jan 2024',
-    logo: '/logo-global.png',
+    logo: 'logo-global.png',
     description: 'IT Services sector specializing in information technology.',
     tasks: [
       'Developed expertise in Design Thinking, Wireframes, and UI Style Guides.',
@@ -246,7 +246,7 @@ const PROJECTS: Category[] = [
         title: 'Personal Social Media Content',
         description: 'Experimental and trending football content produced for personal branding and audience engagement.',
         type: 'Personal Projects',
-        image: '/pc-video-shorts-thumbnail.png',
+        image: 'pc-video-shorts-thumbnail.png',
         subItems: [
           { title: 'Personal Content 01', platform: 'instagram', url: 'https://www.instagram.com/p/DR0v3_JkwO-/', embedId: 'DR0v3_JkwO-' },
           { title: 'Personal Content 02', platform: 'instagram', url: 'https://www.instagram.com/p/DRyJ40ckz14/', embedId: 'DRyJ40ckz14' },
@@ -264,7 +264,7 @@ const PROJECTS: Category[] = [
         title: 'Social Media Content Sport77',
         description: 'Short-form sports highlights and engaging reels produced for Sport77 official channels.',
         type: 'Media Content',
-        image: '/sport77-video-shorts-thumbnail.png',
+        image: 'sport77-video-shorts-thumbnail.png',
         subItems: [
           { title: 'Sport77 Reel 01', platform: 'instagram', url: 'https://www.instagram.com/reel/DTo82Sqkq8J/', embedId: 'DTo82Sqkq8J' },
           { title: 'Sport77 Reel 02', platform: 'instagram', url: 'https://www.instagram.com/reel/DTo6l7MkhsX/', embedId: 'DTo6l7MkhsX' },
@@ -292,7 +292,7 @@ const PROJECTS: Category[] = [
         title: 'Semen Padang FC Content',
         description: 'Professional training session coverage and official club highlights for Semen Padang FC.',
         type: 'Club Media',
-        image: '/spfc-video-shorts-thumbnail.png',
+        image: 'spfc-video-shorts-thumbnail.png',
         subItems: [
           { title: 'SPFC Content 01', platform: 'instagram', url: 'https://www.instagram.com/reel/DHBRFeJP4fF/', embedId: 'DHBRFeJP4fF' },
           { title: 'SPFC Content 02', platform: 'instagram', url: 'https://www.instagram.com/reel/DG8bpC0PBpS/', embedId: 'DG8bpC0PBpS' },
@@ -328,63 +328,63 @@ const PROJECTS: Category[] = [
         title: 'Semen Padang FC Flyers',
         description: 'Official promotional flyers, matchday announcements, and club collateral for Semen Padang FC.',
         type: 'Club Design',
-        image: '/spfc-flyer-01.jpg',
+        image: 'spfc-flyer-01.jpg',
         subItems: [
-          { title: 'Flyer 01', platform: 'image', url: '/spfc-flyer-01.jpg' },
-          { title: 'Flyer 02', platform: 'image', url: '/spfc-flyer-02.jpg' },
-          { title: 'Flyer 03', platform: 'image', url: '/spfc-flyer-03.jpg' },
-          { title: 'Flyer 04', platform: 'image', url: '/spfc-flyer-04.jpg' },
-          { title: 'Flyer 05', platform: 'image', url: '/spfc-flyer-05.jpg' },
-          { title: 'Flyer 06', platform: 'image', url: '/spfc-flyer-06.jpg' },
-          { title: 'Flyer 07', platform: 'image', url: '/spfc-flyer-07.jpg' },
-          { title: 'Flyer 08', platform: 'image', url: '/spfc-flyer-08.jpg' },
-          { title: 'Flyer 09', platform: 'image', url: '/spfc-flyer-09.jpg' },
-          { title: 'Flyer 10', platform: 'image', url: '/spfc-flyer-10.jpg' },
-          { title: 'Flyer 11', platform: 'image', url: '/spfc-flyer-11.jpg' },
-          { title: 'Flyer 12', platform: 'image', url: '/spfc-flyer-12.jpg' },
-          { title: 'Flyer 13', platform: 'image', url: '/spfc-flyer-13.jpg' },
-          { title: 'Flyer 14', platform: 'image', url: '/spfc-flyer-14.jpg' },
-          { title: 'Flyer 15', platform: 'image', url: '/spfc-flyer-15.jpg' },
-          { title: 'Flyer 16', platform: 'image', url: '/spfc-flyer-16.jpg' },
-          { title: 'Flyer 17', platform: 'image', url: '/spfc-flyer-17.jpg' },
-          { title: 'Flyer 18', platform: 'image', url: '/spfc-flyer-18.jpg' },
-          { title: 'Flyer 19', platform: 'image', url: '/spfc-flyer-19.jpg' },
+          { title: 'Flyer 01', platform: 'image', url: 'spfc-flyer-01.jpg' },
+          { title: 'Flyer 02', platform: 'image', url: 'spfc-flyer-02.jpg' },
+          { title: 'Flyer 03', platform: 'image', url: 'spfc-flyer-03.jpg' },
+          { title: 'Flyer 04', platform: 'image', url: 'spfc-flyer-04.jpg' },
+          { title: 'Flyer 05', platform: 'image', url: 'spfc-flyer-05.jpg' },
+          { title: 'Flyer 06', platform: 'image', url: 'spfc-flyer-06.jpg' },
+          { title: 'Flyer 07', platform: 'image', url: 'spfc-flyer-07.jpg' },
+          { title: 'Flyer 08', platform: 'image', url: 'spfc-flyer-08.jpg' },
+          { title: 'Flyer 09', platform: 'image', url: 'spfc-flyer-09.jpg' },
+          { title: 'Flyer 10', platform: 'image', url: 'spfc-flyer-10.jpg' },
+          { title: 'Flyer 11', platform: 'image', url: 'spfc-flyer-11.jpg' },
+          { title: 'Flyer 12', platform: 'image', url: 'spfc-flyer-12.jpg' },
+          { title: 'Flyer 13', platform: 'image', url: 'spfc-flyer-13.jpg' },
+          { title: 'Flyer 14', platform: 'image', url: 'spfc-flyer-14.jpg' },
+          { title: 'Flyer 15', platform: 'image', url: 'spfc-flyer-15.jpg' },
+          { title: 'Flyer 16', platform: 'image', url: 'spfc-flyer-16.jpg' },
+          { title: 'Flyer 17', platform: 'image', url: 'spfc-flyer-17.jpg' },
+          { title: 'Flyer 18', platform: 'image', url: 'spfc-flyer-18.jpg' },
+          { title: 'Flyer 19', platform: 'image', url: 'spfc-flyer-19.jpg' },
         ]
       },
       {
         title: 'Football Player Flyers',
         description: 'Bespoke player presentation flyers and profile graphics for professional scouts and agents.',
         type: 'Talent Showcase',
-        image: '/fp-01.jpg',
+        image: 'fp-01.jpg',
         subItems: [
-          { title: 'Player Flyer 01', platform: 'image', url: '/fp-01.jpg' },
-          { title: 'Player Flyer 02', platform: 'image', url: '/fp-02.jpg' },
-          { title: 'Player Flyer 03', platform: 'image', url: '/fp-03.jpg' },
-          { title: 'Player Flyer 04', platform: 'image', url: '/fp-04.jpg' },
-          { title: 'Player Flyer 05', platform: 'image', url: '/fp-05.jpg' },
-          { title: 'Player Flyer 06', platform: 'image', url: '/fp-06.jpg' },
-          { title: 'Player Flyer 07', platform: 'image', url: '/fp-07.jpg' },
-          { title: 'Player Flyer 08', platform: 'image', url: '/fp-08.jpg' },
-          { title: 'Player Flyer 09', platform: 'image', url: '/fp-09.jpg' },
-          { title: 'Player Flyer 10', platform: 'image', url: '/fp-10.jpg' },
-          { title: 'Player Flyer 11', platform: 'image', url: '/fp-11.jpg' },
-          { title: 'Player Flyer 12', platform: 'image', url: '/fp-12.jpg' },
-          { title: 'Player Flyer 13', platform: 'image', url: '/fp-13.jpg' },
-          { title: 'Player Flyer 14', platform: 'image', url: '/fp-14.jpg' },
+          { title: 'Player Flyer 01', platform: 'image', url: 'fp-01.jpg' },
+          { title: 'Player Flyer 02', platform: 'image', url: 'fp-02.jpg' },
+          { title: 'Player Flyer 03', platform: 'image', url: 'fp-03.jpg' },
+          { title: 'Player Flyer 04', platform: 'image', url: 'fp-04.jpg' },
+          { title: 'Player Flyer 05', platform: 'image', url: 'fp-05.jpg' },
+          { title: 'Player Flyer 06', platform: 'image', url: 'fp-06.jpg' },
+          { title: 'Player Flyer 07', platform: 'image', url: 'fp-07.jpg' },
+          { title: 'Player Flyer 08', platform: 'image', url: 'fp-08.jpg' },
+          { title: 'Player Flyer 09', platform: 'image', url: 'fp-09.jpg' },
+          { title: 'Player Flyer 10', platform: 'image', url: 'fp-10.jpg' },
+          { title: 'Player Flyer 11', platform: 'image', url: 'fp-11.jpg' },
+          { title: 'Player Flyer 12', platform: 'image', url: 'fp-12.jpg' },
+          { title: 'Player Flyer 13', platform: 'image', url: 'fp-13.jpg' },
+          { title: 'Player Flyer 14', platform: 'image', url: 'fp-14.jpg' },
         ]
       },
       {
         title: 'Personal Content Thumbnail & Posters',
         description: 'Dynamic thumbnails and high-impact posters for visual storytelling and personal branding.',
         type: 'Creative Branding',
-        image: '/pc-01.jpg',
+        image: 'pc-01.jpg',
         subItems: [
-          { title: 'Art Asset 01', platform: 'image', url: '/pc-01.jpg' },
-          { title: 'Art Asset 02', platform: 'image', url: '/pc-02.jpg' },
-          { title: 'Art Asset 03', platform: 'image', url: '/pc-03.jpg' },
-          { title: 'Art Asset 04', platform: 'image', url: '/pc-04.jpg' },
-          { title: 'Art Asset 05', platform: 'image', url: '/pc-05.jpg' },
-          { title: 'Art Asset 06', platform: 'image', url: '/pc-06.jpg' },
+          { title: 'Art Asset 01', platform: 'image', url: 'pc-01.jpg' },
+          { title: 'Art Asset 02', platform: 'image', url: 'pc-02.jpg' },
+          { title: 'Art Asset 03', platform: 'image', url: 'pc-03.jpg' },
+          { title: 'Art Asset 04', platform: 'image', url: 'pc-04.jpg' },
+          { title: 'Art Asset 05', platform: 'image', url: 'pc-05.jpg' },
+          { title: 'Art Asset 06', platform: 'image', url: 'pc-06.jpg' },
         ]
       }
     ]
@@ -529,7 +529,7 @@ export default function App() {
                   
                   <div className="w-full h-full relative z-10 overflow-hidden">
                     <img 
-                      src="/profile.png" 
+                      src="profile.png" 
                       alt="Ilham Agus Pratama"
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover object-top relative z-20 group-hover:scale-110 transition-transform duration-1000 ease-out"
@@ -611,7 +611,7 @@ export default function App() {
                   <div>
                     <div className="flex items-center gap-4 mb-6">
                       <div className="w-12 h-12 bg-white/5 border border-white/10 p-1 flex items-center justify-center overflow-hidden grayscale hover:grayscale-0 transition-all duration-500 shrink-0">
-                        <img src="/logo-pnp.png" alt="PNP Logo" className="w-full h-full object-contain" />
+                        <img src="logo-pnp.png" alt="PNP Logo" className="w-full h-full object-contain" />
                       </div>
                       <div>
                         <h4 className="font-black text-brand-primary text-lg uppercase tracking-tight">Politeknik Negeri Padang</h4>
