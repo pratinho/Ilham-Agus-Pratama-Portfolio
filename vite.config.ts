@@ -6,7 +6,7 @@ import {defineConfig, loadEnv} from 'vite';
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
-    base: '/Ilham-Agus-Pratama-Portfolio/', // Sesuai dengan nama repositori GitHub Anda
+    base: mode === 'production' ? '/Ilham-Agus-Pratama-Portfolio/' : '/', // Sesuai dengan nama repositori GitHub Anda di production, tapi '/' di development (preview)
     plugins: [react(), tailwindcss()],
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
