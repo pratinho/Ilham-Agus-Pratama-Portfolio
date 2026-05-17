@@ -490,7 +490,7 @@ export default function App() {
                 initial={{ opacity: 0, x: -30 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6 }}
-                className="text-left"
+                className="text-left order-2 lg:order-1"
               >
                 <div className="flex items-center gap-2 mb-8">
                   <span className="w-12 h-[1px] bg-brand-accent"></span>
@@ -528,7 +528,7 @@ export default function App() {
                 initial={{ opacity: 0, scale: 0.9, x: 40 }}
                 animate={{ opacity: 1, scale: 1, x: 0 }}
                 transition={{ duration: 0.8, ease: "circOut" }}
-                className="relative flex justify-center lg:justify-end"
+                className="relative flex justify-center lg:justify-end order-1 lg:order-2"
               >
                 <div className="relative w-80 h-[400px] md:w-[450px] md:h-[550px] lg:w-[550px] lg:h-[700px] group">
                   <div className="absolute inset-0 bg-brand-accent rounded-full blur-[150px] opacity-25 animate-pulse" />
